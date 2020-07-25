@@ -14,7 +14,7 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_5_0') {
+                withMaven(maven : 'maven_4_19_0') {
                     sh 'mvn test'
                 }
             }
